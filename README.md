@@ -52,6 +52,6 @@ To ensure high performance and tool stability, I have opted for a **Type-2 Hyper
 Used the Metasploit Framework (MSF) to verify target configurations.
 
 - **Module:** `auxiliary/scanner/smb/smb_version`
-- **Finding:** Verified Target OS as Windows 10 Pro. **Metasploit Finding Results:** [View File] (./Scans/metasploit_target_results.txt)
+- **Finding:** Verified Target OS as Windows 10 Pro. **Metasploit Finding Results:** [View File](./Scans/metasploit_target_results.txt)
 - **Security Check:** Attempted `smb_login` with common weak credentials. 
 - **Result:** Login Failed (Expected behavior for a secure local account).
