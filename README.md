@@ -41,6 +41,7 @@ To ensure high performance and tool stability, I have opted for a **Type-2 Hyper
 
 ### Phase 3: Vulnerability Assessment (NSE)
 **Command:** `sudo nmap --script vuln 192.168.164.50` **Vuln Scan Results:** [View raw scan output](./Scans/vuln_scan_results.txt)
+
 **Technical Analysis:**
 - **Surface Area:** Ports 135, 139, and 445 (SMB/RPC) were confirmed open. This represents a standard Windows management surface.
 - **Vulnerability Status:** Initial NSE scripts for legacy exploits (MS10-061, MS10-054) returned negative or inconclusive results. 
