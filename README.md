@@ -25,3 +25,11 @@ To ensure high performance and tool stability, I have opted for a **Type-2 Hyper
 ![Kali](https://img.shields.io/badge/OS-Kali_Linux-blue?logo=kalilinux&logoColor=white) 
 ![VMware](https://img.shields.io/badge/Lab-VMware_Workstation-orange?logo=vmware&logoColor=white) 
 ![Python](https://img.shields.io/badge/Scripting-Python-3776AB?logo=python&logoColor=white)
+
+## 🚩 Progress Log
+
+### Task 1: Network & OS Initialization
+- [x] Deployed **Kali Linux 2026.1** as the primary Attacker Node.
+- [x] Hardened the environment with `full-upgrade` and snapshots.
+- [x] Provisioned **Windows 10 Enterprise (22H2)** as the Victim Node.
+- [x] Configured **Host-Only networking** to ensure 100% lab isolation.
