@@ -54,4 +54,4 @@ Used the Metasploit Framework (MSF) to verify target configurations.
 - **Module:** `auxiliary/scanner/smb/smb_version`
 - **Finding:** Verified Target OS as Windows 10 Pro. **Metasploit Finding Results:** [View File](./Scans/metasploit_target_results.txt)
 - **Security Check:** Attempted `smb_login` with common weak credentials. 
-- **Result:** Login Failed (Expected behavior for a secure local account).**Credential Test Results:** [View File](./Scans/credential_testing.txt) [View Screenshot](./Scans/Nmapscan.png)
+- **Result:** Login Failed (Expected behavior for a secure local account).**Credential Test Results:** [View File](./Scans/credential_testing.txt) | [View Screenshot](./Scans/Nmapscan.png)
