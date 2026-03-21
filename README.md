@@ -47,3 +47,11 @@ To ensure high performance and tool stability, I have opted for a **Type-2 Hyper
 - **Surface Area:** Ports 135, 139, and 445 (SMB/RPC) were confirmed open. This represents a standard Windows management surface.
 - **Vulnerability Status:** Initial NSE scripts for legacy exploits (MS10-061, MS10-054) returned negative or inconclusive results. 
 - **Conclusion:** The target (Windows 10 22H2) appears to have modern security patches applied, successfully mitigating common legacy SMB-based exploits.
+- 
+### Phase 4: Active Reconnaissance (Metasploit)
+Used the Metasploit Framework (MSF) to verify target configurations.
+
+- **Module:** `auxiliary/scanner/smb/smb_version`
+- **Finding:** Verified Target OS as Windows 10 Pro.
+- **Security Check:** Attempted `smb_login` with common weak credentials. 
+- **Result:** Login Failed (Expected behavior for a secure local account).
