@@ -8,11 +8,11 @@ To ensure high performance and tool stability, I have opted for a **Type-2 Hyper
 
 - **Hypervisor:** VMware Workstation Pro 25H2u1
 - **Host Optimization:** Disabled Windows Hyper-V (`bcdedit /set hypervisorlaunchtype off`) to allow raw VT-x access for the hypervisor, ensuring 100% performance for debuggers and specialized RE tools.
-- **Primary Attacker:** Kali Linux (Rolling Release)
-- **Primary RE Target:** Windows 10 (Custom 'Flare-VM' configuration - *Coming Soon*)
+- **Primary Attacker:** Kali Linux 
+- **Primary RE Target:** Windows 10 Pro
 
 ## 📁 Repository Structure
-- `/Lab-Setup`: Configuration scripts, batch files, and network diagrams.
+- `/Scans`: Configuration scripts and results.
 - `/Reverse-Engineering`: Write-ups and analysis of binaries and malware samples.
 - `/Penetration-Testing`: Documented exploit chains and network assessments.
 - `/Automation`: Python and Bash scripts developed for security task automation.
