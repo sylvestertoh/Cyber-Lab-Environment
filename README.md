@@ -38,10 +38,10 @@ To ensure high performance and tool stability, I have opted for a **Type-2 Hyper
 ### Phase 2: Network Discovery & Reconnaissance
 - [x] Assigned Static IP `192.168.164.50` to the Windows Target.
 - [x] Verified connectivity between nodes via ICMP (Ping).
-- [x] Conducted an **Aggressive Nmap Scan (`-A`)** to identify open services (SMB, RDP, RPC).**Nmap Scan Results:** [View raw scan output](./Scans/nmap_windows_victim.txt)
+- [x] Conducted an **Aggressive Nmap Scan (`-A`)** to identify open services (SMB, RDP, RPC).**Nmap Scan Results:** [View File](./Scans/nmap_windows_victim.txt)
 
 ### Phase 3: Vulnerability Assessment (NSE)
-**Command:** `sudo nmap --script vuln 192.168.164.50` **Vuln Scan Results:** [View raw scan output](./Scans/vuln_scan_results.txt)
+**Command:** `sudo nmap --script vuln 192.168.164.50` **Vuln Scan Results:** [View File](./Scans/vuln_scan_results.txt)
 
 **Technical Analysis:**
 - **Surface Area:** Ports 135, 139, and 445 (SMB/RPC) were confirmed open. This represents a standard Windows management surface.
@@ -52,6 +52,6 @@ To ensure high performance and tool stability, I have opted for a **Type-2 Hyper
 Used the Metasploit Framework (MSF) to verify target configurations.
 
 - **Module:** `auxiliary/scanner/smb/smb_version`
-- **Finding:** Verified Target OS as Windows 10 Pro.
+- **Finding:** Verified Target OS as Windows 10 Pro. **Metasploit Finding Results:** [View File] (./Scans/metasploit_target_results.txt)
 - **Security Check:** Attempted `smb_login` with common weak credentials. 
 - **Result:** Login Failed (Expected behavior for a secure local account).
