@@ -1,2 +1,22 @@
-# Cyber-Lab-Environment
-Cybersecurity Lab &amp; Technical Project Portfolio for Entry-Level
+# 🛡️ Cybersecurity Home Lab & Project Portfolio
+
+## 📍 Project Overview
+This repository documents my journey in building a professional-grade cybersecurity laboratory focused on **Reverse Engineering** and **Penetration Testing**. My goal is to demonstrate technical proficiency and a structured methodology suitable for entry-level cybersecurity roles in Singapore.
+
+## 🧪 Phase 1: Lab Architecture (Current)
+To ensure high performance and tool stability, I have opted for a **Type-2 Hypervisor** setup with hardware-level optimizations.
+
+- **Hypervisor:** VMware Workstation Pro 25H2u1
+- **Host Optimization:** Disabled Windows Hyper-V (`bcdedit /set hypervisorlaunchtype off`) to allow raw VT-x access for the hypervisor, ensuring 100% performance for debuggers and specialized RE tools.
+- **Primary Attacker:** Kali Linux (Rolling Release)
+- **Primary RE Target:** Windows 10 (Custom 'Flare-VM' configuration - *Coming Soon*)
+
+## 📁 Repository Structure
+- `/Lab-Setup`: Configuration scripts, batch files, and network diagrams.
+- `/Reverse-Engineering`: Write-ups and analysis of binaries and malware samples.
+- `/Penetration-Testing`: Documented exploit chains and network assessments.
+- `/Automation`: Python and Bash scripts developed for security task automation.
+
+## 🚀 About Me
+- **Education:** B.Sc. in Cybersecurity
+- **Current Focus:** Building a reverse engineering portfolio and mastering the Singapore threat landscape.
