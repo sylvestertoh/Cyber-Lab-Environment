@@ -30,6 +30,11 @@ To ensure high performance and tool stability, I have opted for a **Type-2 Hyper
 
 ### Task 1: Network & OS Initialization
 - [x] Deployed **Kali Linux 2026.1** as the primary Attacker Node.
-- [x] Hardened the environment with `full-upgrade` and snapshots.
+- [x] Hardened the environment with `full-upgrade`.
 - [x] Provisioned **Windows 10 Enterprise (22H2)** as the Victim Node.
 - [x] Configured **Host-Only networking** to ensure 100% lab isolation.
+
+### Task 2: Network Discovery & Reconnaissance (Today)
+- [x] Assigned Static IP `192.168.164.50` to the Windows Target.
+- [x] Verified connectivity between nodes via ICMP (Ping).
+- [x] Conducted an **Aggressive Nmap Scan (`-A`)** to identify open services (SMB, RDP, RPC).
