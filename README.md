@@ -19,7 +19,7 @@ To ensure high performance and tool stability, I have opted for a **Type-2 Hyper
 
 ## 🚀 About Me
 - **Education:** B.Sc. in Cybersecurity
-- **Current Focus:** Building a reverse engineering portfolio and mastering the Singapore threat landscape.
+- **Current Focus:** Building a reverse engineering portfolio and learning the Singapore threat landscape.
 
 
 ![Kali](https://img.shields.io/badge/OS-Kali_Linux-blue?logo=kalilinux&logoColor=white) 
