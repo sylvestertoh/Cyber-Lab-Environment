@@ -1,0 +1,4 @@
+[*] 192.168.164.50:445    - SMB Detected (versions:2, 3) (preferred dialect:SMB 3.1.1) (compression capabilities:LZNT1) (encryption capabilities:AES-128-GCM) (signatures:optional) (guid:{4d7ca892-7138-4b8c-8e81-2709928a7f33}) (authentication domain:DESKTOP-P560MLI)
+[+] 192.168.164.50:445    -   Host is running Version 10.0.19041 (likely Windows 10 version 2004)
+[*] 192.168.164.50        - Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
