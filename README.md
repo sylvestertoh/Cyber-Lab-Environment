@@ -81,8 +81,9 @@ Simulated a social engineering scenario where a user executes an untrusted file.
 **No change, so I did not upload a screenshot**
   
 **Second Attempt👍**
--**Method:** Using "shell" command to act like cmd on Windows 
-**Target:** HKEY_CURRENT_USER (HKCU)
+
+- **Method:** Using "shell" command to act like cmd on Windows 
+- **Target:** HKEY_CURRENT_USER (HKCU)
 - **Execution Path:** Successfully injected into HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run (UpdateService) [View File](./Scans/hklmedit.txt) | [View Screenshot](./Scans/regedithkcu.png)
 
 
