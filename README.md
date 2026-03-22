@@ -67,6 +67,6 @@ Simulated a social engineering scenario where a user executes an untrusted file.
 ### Phase 6: Post-Exploitation
 
 - **System Discovery:** Executed `sysinfo` to confirm architecture (x64) and build (19045). [View File](./Scans/sysinfo.txt)
-- **Evidence Collection:** Captured a remote desktop screenshot via the `screenshot` command to verify session persistence. [View Screenshot](./Scans/sscommand.jepg)
+- **Evidence Collection:** Captured a remote desktop screenshot via the `screenshot` command to verify session persistence. [View Screenshot](./Scans/sscommand.jpeg)
 - **Privilege Assessment:** Attempted `getsystem` for automated privilege escalation.
 - **Result:**
