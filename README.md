@@ -69,4 +69,23 @@ Simulated a social engineering scenario where a user executes an untrusted file.
 - **System Discovery:** Executed `sysinfo` to confirm architecture (x64) and build (19045). [View File](./Scans/sysinfo.txt)
 - **Evidence Collection:** Captured a remote desktop screenshot via the `screenshot` command to verify session persistence. [View Screenshot](./Scans/sscommand.jpeg)
 - **Privilege Assessment:** Attempted `getsystem` for automated privilege escalation. 
-- **Result:** Got blocked by UAC. Hence, a failed privilege escalation attempt. [View File](./Scans/getsystem.txt)
+- ❗**Result:** Got blocked by UAC. Hence, a failed privilege escalation attempt. [View File](./Scans/getsystem.txt)
+
+### Phase 7: Persistence & Anti-Forensics
+
+**1. Persistence:**
+**My First Attempt👎:** Failed due to HKEY_LOCAL_MACHINE being protected. Hence, exploit/windows/local/registry_userinit
+- **Module:** exploit/windows/local/registry_userinit (via UserInit modification)
+- **Execution Path:** Tried to injected into the Userinit registry chain under HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\ | **FAILED** | Insufficient Privileges (Standard User)
+**No change, so I did not upload a screenshot**
+  
+**Second Attempt👍**
+-**Method:** Using "shell" command to act like cmd on Windows 
+**Target:** HKEY_CURRENT_USER (HKCU)
+- **Execution Path:** Successfully injected into HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run (UpdateService) [View File](./Scans/hklmedit.txt) | [View Screenshot](./Scans/regedithkcu.png)
+
+
+**2. Artifact Cleanup (Anti-Forensics):**
+- **Command:** `clearev`
+- **Action:** Purged Windows Event Logs (System, Security, and Application) to simulate evading detection by automated SIEM/EDR solutions.
+
