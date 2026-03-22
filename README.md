@@ -74,6 +74,7 @@ Simulated a social engineering scenario where a user executes an untrusted file.
 ### Phase 7: Persistence & Anti-Forensics
 
 **1. Persistence:**
+
 **My First Attempt👎:** Failed due to HKEY_LOCAL_MACHINE being protected. Hence, exploit/windows/local/registry_userinit
 - **Module:** exploit/windows/local/registry_userinit (via UserInit modification)
 - **Execution Path:** Tried to injected into the Userinit registry chain under HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\ | **FAILED** | Insufficient Privileges (Standard User)
