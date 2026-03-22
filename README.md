@@ -63,3 +63,10 @@ Simulated a social engineering scenario where a user executes an untrusted file.
 - **Payload:** `windows/x64/meterpreter/reverse_tcp` **Payload Created:** [View File](./Scans/payload.txt) | [View Screenshot](./Scans/exefile.png)
 - **Delivery Method:** Python-based HTTP Delivery. **Http delivery:** [View Screenshot](./Scans/exefiledownloaded.png)
 - **Goal:** Establish a Reverse Shell (Meterpreter) to bypass firewall restrictions. **Bypass successful:** [View File](./Scans/metapretersession.txt)
+
+### Phase 6: Post-Exploitation
+
+- **System Discovery:** Executed `sysinfo` to confirm architecture (x64) and build (19045). [View File](./Scans/sysinfo.txt)
+- **Evidence Collection:** Captured a remote desktop screenshot via the `screenshot` command to verify session persistence. [View Screenshot](./Scans/sscommand.jepg)
+- **Privilege Assessment:** Attempted `getsystem` for automated privilege escalation.
+- **Result:**
