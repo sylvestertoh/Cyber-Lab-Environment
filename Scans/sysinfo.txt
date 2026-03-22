@@ -1,0 +1,10 @@
+meterpreter > getuid
+Server username: DESKTOP-P560MLI\Lab-user
+meterpreter > sysinfo
+Computer        : DESKTOP-P560MLI
+OS              : Windows 10 22H2+ (10.0 Build 19045).
+Architecture    : x64
+System Language : en_US
+Domain          : WORKGROUP
+Logged On Users : 2
+Meterpreter     : x64/windows
