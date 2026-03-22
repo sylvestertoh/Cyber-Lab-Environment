@@ -61,5 +61,5 @@ Simulated a social engineering scenario where a user executes an untrusted file.
 
 - **Tool:** `msfvenom`
 - **Payload:** `windows/x64/meterpreter/reverse_tcp` **Payload Created:** [View File](./Scans/payload.txt) | [View Screenshot](./Scans/exefile.png)
-- **Delivery Method:** Python-based HTTP Delivery.
-- **Goal:** Establish a Reverse Shell (Meterpreter) to bypass firewall restrictions.
+- **Delivery Method:** Python-based HTTP Delivery. **Http delivery:** [View Screenshot](./Scans/exefiledownloaded.png)
+- **Goal:** Establish a Reverse Shell (Meterpreter) to bypass firewall restrictions. **Bypass successful:** [View File](./Scans/metapretersession.txt)
