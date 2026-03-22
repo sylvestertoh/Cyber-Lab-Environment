@@ -47,7 +47,7 @@ To ensure high performance and tool stability, I have opted for a **Type-2 Hyper
 - **Surface Area:** Ports 135, 139, and 445 (SMB/RPC) were confirmed open. This represents a standard Windows management surface.
 - **Vulnerability Status:** Initial NSE scripts for legacy exploits (MS10-061, MS10-054) returned negative or inconclusive results. 
 - **Conclusion:** The target (Windows 10 22H2) appears to have modern security patches applied, successfully mitigating common legacy SMB-based exploits.
-- 
+  
 ### Phase 4: Active Reconnaissance (Metasploit)
 Used the Metasploit Framework (MSF) to verify target configurations.
 
@@ -55,3 +55,11 @@ Used the Metasploit Framework (MSF) to verify target configurations.
 - **Finding:** Verified Target OS as Windows 10 Pro. **Metasploit Finding Results:** [View File](./Scans/metasploit_target_results.txt)
 - **Security Check:** Attempted `smb_login` with common weak credentials. 
 - **Result:** Login Failed (Expected behavior for a secure local account). **Credential Test Results:** [View File](./Scans/credential_testing.txt) | [View Screenshot](./Scans/Nmapscan.png)
+
+### Phase 5: Client-Side Attack Simulation
+Simulated a social engineering scenario where a user executes an untrusted file.
+
+- **Tool:** `msfvenom`
+- **Payload:** `windows/x64/meterpreter/reverse_tcp` **Payload Created:** [View File](./Scans/payload.txt) | [View Screenshot](./Scans/exefile.png)
+- **Delivery Method:** Python-based HTTP Delivery.
+- **Goal:** Establish a Reverse Shell (Meterpreter) to bypass firewall restrictions.
