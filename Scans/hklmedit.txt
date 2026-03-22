@@ -1,0 +1,3 @@
+C:\Users\Lab-user\Downloads>reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" /v "UpdateService" /t REG_SZ /d "C:\Users\Lab-user\Downloads\SecurityUpdate.exe" /f
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" /v "UpdateService" /t REG_SZ /d "C:\Users\Lab-user\Downloads\SecurityUpdate.exe" /f
+The operation completed successfully.
